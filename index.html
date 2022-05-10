@@ -7,6 +7,50 @@
 	<title>Samuel Wong</title>
 </head>
 <body>
-	<p>Hello World</p>
+	<div id="app">
+		<p class="heading">ivi</p>
+
+		<p class="description">Welcome to ivi, the private photo and image browsing app. ivi is an entirely offline, private image and video storage solution. ivi gives no hints for how to login, showing nothing but a blank, black screen; only you know how to proceed. It uses FaceID as a source of 2FA to ensure your privacy. ivi also offers you peace of mind by recording your actions, so you will know if someone fails to login or tries to grab a screenshot. It will also auto logout if you ever close the app, so no one can accidentaly get in. Due to it's offline nature, ivi can't leak or be viewed remotely. With that in mind, be sure to back up your files if you are going to delete the app, because they will be gone as well.</p>
+
+		<p class="sub-heading">Privacy Policy</p>
+		<p class="description">ivi is completely offline. It won't even attempt to reach the outside world. There exists no tracking or data collection at all. Everything that you do on the app is localized entirely to your device. If you delete the app, it'll all be gone forever.</p>
+	</div>
 </body>
 </html>
+
+<style>
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#app {
+		height: 100vh;
+		width: 100vw;
+		background-color: black;
+		color: white;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.heading {
+		margin: auto;
+		margin-top: 64px;
+		margin-bottom: 24px;
+		font-size: 80px;
+	}
+
+	.sub-heading {
+		margin: auto;
+		margin-top: 64px;
+		margin-bottom: 24px;
+		font-size: 40px;
+	}
+
+	.description {
+		margin-top: 24px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+</style>
